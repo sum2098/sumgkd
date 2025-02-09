@@ -14,7 +14,7 @@ export default defineGkdApp({
       key: 2,
       name: '不感兴趣',
       activityIds: 'null',
-      rules: '@[text="不感兴趣"] + [text="重复出现"]',
+      rules: '@[text="不感兴趣"] +2 [text="重复出现"]',
     },
   ],
 });
