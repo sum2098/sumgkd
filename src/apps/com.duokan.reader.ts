@@ -8,7 +8,7 @@ export default defineGkdApp({
         key: 3,
         name: '全屏广告',
         activityIds: '.DkMainActivity',
-        rules: '[text="点击卡片查看详情"]+@[text="广告"]',
+        rules: '[text="点击卡片查看详情"] + @[text="广告"]',
     }
   ],
 });
