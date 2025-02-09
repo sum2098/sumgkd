@@ -14,13 +14,13 @@ export default defineGkdApp({
       key: 2,
       name: '评论区顶部广告',
       activityIds: 'null',
-      rules: '[text="分享"] < * < * < * < * +1 > * > * +1 > * +3 > * +1 > * > * @[vid="obfuscated"]'',
+      rules: '[text="分享"] < * < * < * < * +1 > * > * +1 > * +3 > * +1 > * > * @[vid="obfuscated"]',
     },
     {
       key: 3,
       name:'评论区内广告',
       activityIds: 'null',
-      rules: '[text="广告"] < * < * < * < * < * < * < * -1 > * +3 @[vid="obfuscated"]'',
+      rules: '[text="广告"] < * < * < * < * < * < * < * -1 > * +3 @[vid="obfuscated"]',
     },
   ],
 });
