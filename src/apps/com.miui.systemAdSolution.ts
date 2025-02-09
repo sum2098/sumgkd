@@ -8,7 +8,7 @@ export default defineGkdApp({
         key: 5,
         name: '不希望看到',
         activityIds: 'null',
-        rules: '@[text="不感兴趣"] + [text="减少这类内容"]','@[text="不感兴趣"] + [text="重复出现"]',
+        rules: '@[text="不感兴趣"] + [text="减少这类内容"]',
     }
   ],
 });
