@@ -8,7 +8,7 @@ export default defineGkdApp({
       key: 1,
       name: '评论区广告',
       activityIds: 'null',
-      rules: '[text="广告"] < * < * -3 >* +1 @[text="关闭"]',
+      rules: '[text="广告"] < * < * -3 > * +1 @[text="关闭"]',
     },
     {
       key: 2,
