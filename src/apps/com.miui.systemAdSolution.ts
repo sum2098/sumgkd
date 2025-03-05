@@ -18,7 +18,7 @@ export default defineGkdApp({
     },
     {
       key: 3,
-      name: '不希望看到',
+      name: '不希望看到2',
       activityIds: 'com.xiaomi.ad.feedback.FeedbackReasonWindow',
       rules: '@[text="不感兴趣"] +2 [text="出现过于频繁"]',
     },
