@@ -10,7 +10,5 @@ export default defineGkdApp({
       activityIds: '.tblauncher.MainTabActivity',
       rules: '[text="直播中"] -1 * < [name="android.widget.LinearLayout"] -2 * < [name="android.widget.RelativeLayout"] -2 * > [name="android.view.View"] +3 [name="android.widget.LinearLayout"] > * +1 @[name="android.widget.ImageView"]',
     },
-    {
-
-    }],
+  ],
 });
