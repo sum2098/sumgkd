@@ -15,7 +15,8 @@ export default defineGkdApp({
       key: 2,
       name: '不感兴趣',
       activityIds: '.tblauncher.MainTabActivity'.
-      rules: '[text="选择不喜欢的理由"] +1 @[name="android.view.View"]',  
+      rules: 
+        '[text="选择不喜欢的理由"] +1 @[name="android.view.View"]',  
     },
   ],
 });
