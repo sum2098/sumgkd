@@ -21,7 +21,7 @@ export default defineGkdApp({
       activityIds: '.pb.pb.main.PbActivity',
       rules: [
         '[text="功能"] -1 [text="隐私"] -1 [text="权限"] -3 * < [name="android.view.ViewGroup"] -1 [name="android.widget.RelativeLayout"] > [name="android.widget.RelativeLayout"] > [name="android.widget.TextView"] +1 @[name="android.widget.FrameLayout"]',
-        '[text="功能"] -1 [text="隐私"] -1 [text="权限"] -3 * < [name="android.view.ViewGroup"] -1 [name="android.widget.RelativeLayout"] < * < * < [name="android.widget.FrameLayout"] -1 [name="android.widget.RelativeLayout"] > [name="android.widget.ImageView"] +3 @[name="android.widget.FrameLayout"]'
+        '[text="功能"] -1 [text="隐私"] -1 [text="权限"] -3 * < [name="android.view.ViewGroup"] -1 [name="android.widget.RelativeLayout"] < * < * < [name="android.widget.FrameLayout"] -1 [name="android.widget.RelativeLayout"] > [name="android.widget.ImageView"] +3 @[name="android.widget.FrameLayout"]',
       ],
     },
   ],
