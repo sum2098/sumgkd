@@ -18,6 +18,7 @@ export default defineGkdApp({
         '[name="android.view.ViewGroup"] -1 [name="android.view.ViewGroup"] < * < * < [name="android.widget.FrameLayout"] -2 * < [name="android.widget.LinearLayout"] -1 [name="android.widget.RelativeLayout"] > * > * +2 * > * > @[name="android.widget.FrameLayout"]',
         '[text="选择不喜欢理由"] +1 @[name="android.view.View"]',
         '[name="android.widget.TextView"] < * < [name="android.widget.LinearLayout"] +1 [name="android.widget.RelativeLayout"] > * > @[name="android.widget.FrameLayout"]',
+        '[name="android.widget.TextView"] +1 [name="android.widget.TextView"] +1 @[name="android.widget.FrameLayout"]',
       ],
     },
     {
@@ -34,6 +35,7 @@ export default defineGkdApp({
         '[name="android.view.ViewGroup"] -1 [name="android.view.ViewGroup"] < * < * < [name="android.widget.FrameLayout"] -2 * < [name="android.widget.LinearLayout"] -1 [name="android.widget.RelativeLayout"] > * > * +2 * > * > @[name="android.widget.FrameLayout"]',
         '[text="选择不喜欢理由"] +1 @[name="android.view.View"]',
         '[name="android.widget.TextView"] < * < [name="android.widget.LinearLayout"] +1 [name="android.widget.RelativeLayout"] > * > @[name="android.widget.FrameLayout"]',
+        '[name="android.widget.TextView"] +1 [name="android.widget.TextView"] +1 @[name="android.widget.FrameLayout"]',
       ],
     },
   ],
