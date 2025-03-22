@@ -22,6 +22,7 @@ export default defineGkdApp({
       rules: [
         '[text="功能"] -1 [text="隐私"] -1 [text="权限"] -3 * < [name="android.view.ViewGroup"] -1 [name="android.widget.RelativeLayout"] > [name="android.widget.RelativeLayout"] > [name="android.widget.TextView"] +1 @[name="android.widget.FrameLayout"]',
         '[text="功能"] -1 [text="隐私"] -1 [text="权限"] -3 * < [name="android.view.ViewGroup"] -1 [name="android.widget.RelativeLayout"] < * < * < [name="android.widget.FrameLayout"] -1 [name="android.widget.RelativeLayout"] > [name="android.widget.ImageView"] +3 @[name="android.widget.FrameLayout"]',
+        '[name="android.view.ViewGroup"] -1 [name="android.view.ViewGroup"] < * < * < [name="android.widget.FrameLayout"] -2 * < [name="android.widget.LinearLayout"] -1 [name="android.widget.RelativeLayout"] > * > * +2 * > * > @[name="android.widget.FrameLayout"]',
       ],
     },
   ],
