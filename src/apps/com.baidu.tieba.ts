@@ -8,8 +8,10 @@ export default defineGkdApp({
       key: 1,
       name: '首页直播',
       activityIds: '.tblauncher.MainTabActivity',
-      rules:['[text="直播中"] -1 * < [name="android.widget.LinearLayout"] -2 * < [name="android.widget.RelativeLayout"] -2 * > [name="android.view.View"] +3 [name="android.widget.LinearLayout"] > * +1 @[name="android.widget.ImageView"]','[text="选择不喜欢的理由"] +1 @[name="android.view.View"]'],
-        
+      rules: [
+        '[text="直播中"] -1 * < [name="android.widget.LinearLayout"] -2 * < [name="android.widget.RelativeLayout"] -2 * > [name="android.view.View"] +3 [name="android.widget.LinearLayout"] > * +1 @[name="android.widget.ImageView"]',
+        '[text="选择不喜欢的理由"] +1 @[name="android.view.View"]',
+      ],
     },
     {
       key: 2,
